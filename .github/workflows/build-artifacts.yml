@@ -1,9 +1,8 @@
 name: Build Artifacts
 
 on:
-  push:
-    tags:
-      - "*"
+  watch:
+    types: [started]
 
 permissions:
   contents: write
